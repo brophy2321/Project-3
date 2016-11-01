@@ -9,8 +9,12 @@
       <% @categories.each do |category| %>
         <tr>
           <td> <% category.title %></td>
-          <img src = "<%= category.photo_url %>"/>
+          <img src = "<%= category.photo_url %>"/><br>
             <td><%= link_to 'Show', category_path(category) %></td>
+            <td> <%= link_to 'Edit', edit_category_path(category) %></td>
+            <td><%= link_to 'Delete', category_path(category),
+                    method: :delete,
+                    data: {confirm: 'Are you sure you want to delete this?'} %> </td>
           </tr>
           <% end %>
         </table>
