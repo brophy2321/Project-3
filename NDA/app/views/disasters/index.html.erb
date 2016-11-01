@@ -5,11 +5,11 @@
     <th>Title</th>
     <th>Photo</th>
   </tr>
-
   <% @disasters.each do |disaster| %>
+
     <tr>
       <td><%= disaster.title %></td>
-      <td><%= disaster.photo_url%></td>
+      <td><img src= "<%= disaster.photo_url%>"></td>
       <td><%= link_to 'Show', disaster_path(disaster) %></td>
     </tr>
   <% end %>

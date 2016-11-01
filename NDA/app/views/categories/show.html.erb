@@ -4,15 +4,14 @@
   <%= @category.title %>
 </p>
 
-<% @category.disasters.each do |disaster| %>
-<p>
-  <strong>Photo:</strong>
-  <img src= "<%= @category.photo_url %>"/>
-</p>
+
 
 <h2>Disasters in this Category</h2>
+<% @category.disasters.each do |disaster| %>
+<p> <%= disaster.title %>
+</p>
 <p>
-  <img src = "<%disaster.photo_url %>"/>
+  <img src = "<%= disaster.photo_url %>"/>
 </p>
 
 
