@@ -4,17 +4,17 @@
       <tr>
         <th> Disasters </th>
       </tr>
-      <td><%= link_to 'New Category', new_category_path(@categories) %> </td>
+      <!-- <td><%= link_to 'New Category', new_category_path(@categories) %> </td> -->
 
       <% @categories.each do |category| %>
         <tr>
-          <td> <% category.title %></td>
-          <img src = "<%= category.photo_url %>"/><br>
+          <td> <%= category.title %></td>
+          <td><img src = "<%= category.photo_url %>"/></td><br>
             <td><%= link_to 'Show', category_path(category) %></td>
-            <td> <%= link_to 'Edit', edit_category_path(category) %></td>
+            <!-- <td> <%= link_to 'Edit', edit_category_path(category) %></td>
             <td><%= link_to 'Delete', category_path(category),
                     method: :delete,
-                    data: {confirm: 'Are you sure you want to delete this?'} %> </td>
+                    data: {confirm: 'Are you sure you want to delete this?'} %> </td> -->
           </tr>
           <% end %>
         </table>

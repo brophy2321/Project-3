@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20161101012655) do
   create_table "disasters", force: :cascade do |t|
     t.string   "title"
     t.text     "description"
-    t.text     "preperation"
+    t.text     "preparation"
     t.string   "photo_url"
     t.integer  "category_id"
     t.datetime "created_at",  null: false

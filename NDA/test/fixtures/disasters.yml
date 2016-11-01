@@ -3,13 +3,13 @@
 one:
   title: MyString
   description: MyText
-  preperation: MyText
+  preparation: MyText
   photo_url: MyString
   category: one
 
 two:
   title: MyString
   description: MyText
-  preperation: MyText
+  preparation: MyText
   photo_url: MyString
   category: two

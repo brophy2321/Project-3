@@ -15,14 +15,14 @@ wildfire = Category.create!(title: 'Wildfire', photo_url: ' data:image/jpeg;base
 
 geological.disasters.create!(title: "Earthquake",
     description: "An earthquake is a sudden, rapid shaking of the earth caused by the breaking and shifting of rock beneath the earth’s surface. Earthquakes strike suddenly, without warning, and they can occur at any time of the year, day or night. Forty-five states and territories in the United States are at moderate to very high risk of earthquakes, and they are located in every region of the country.",
-    preperation: "Become aware of fire evacuation and earthquake safety plans for all of the buildings you occupy regularly.
+    preparation: "Become aware of fire evacuation and earthquake safety plans for all of the buildings you occupy regularly.
 Pick safe places in each room of your home, workplace and/or school. A safe place could be under a piece of furniture or against an interior wall away from windows, bookcases or tall furniture that could fall on you.
 Practice “drop, cover and hold on” in each safe place. If you do not have sturdy furniture to hold on to, sit on the floor next to an interior wall and cover your head and neck with your arms.. Do not place or hang heavy items, such as pictures and mirrors, close to beds, couches and anywhere people sleep or sit.",
     photo_url: "http://embed.widencdn.net/img/americanredcross/khrcwmhkks/714x410px/714x410-types-of-emergency-earthquake.jpg?keep=c&quality=100&u=h0xpft")
 
 geological.disasters.create!(title: "Avalanche",
   description: "Technically, an avalanche is any amount of snow sliding down a mountainside.  It can be compared to a landslide, only with snow instead of earth.  Another common term for avalanche is “snowslide”.  As an avalanche becomes nearer to the bottom of the slope, it gains speed and power, this can cause even the smallest of snowslides to be a major disasters.",
-  preperation: "Always travel with a partner and always ski slopes one at a time.
+  preparation: "Always travel with a partner and always ski slopes one at a time.
 Practice with your beacon by visiting a beacon park such as the one at Beall Park. A person has an 85% chance of surviving if they are dug up in 15 minutes; it drops to 40% after 30 minutes.
 Carry an inclinometer so you know when you’re in avalanche terrain (slopes steeper than 30 degrees). Assume that a well-tracked ski slope won’t avalanche.
 Think that side-country skiing is any safer than in the remote backcountry. It’s not.
@@ -31,7 +31,7 @@ Leave a buried avalanche victim in order to alert rescuers. YOU are the rescuer 
 
 geological.disasters.create!(title: "Volcano",
   description: "Explosive volcanoes blast hot solid and molten rock fragments and gases into the air. As a result, ashflows can occur on all sides of a volcano and ash can fall hundreds of miles downwind. Dangerous mudflows and floods can occur in valleys leading away from volcanoes. If you live near a known volcano, active or dormant, be prepared to follow volcano safety instructions from your local emergency officials.",
-  preperation: "Learn about your community warning systems and emergency plans.
+  preparation: "Learn about your community warning systems and emergency plans.
 Be prepared for the hazards that can accompany volcanoes:
 ̶	Mudflows and flash floods
 
@@ -49,7 +49,7 @@ Develop an emergency communication plan. In case family members are separated fr
 
 hydrological.disasters.create!(title: "Flood",
     description: "Floods are among the most frequent and costly natural disasters. Conditions that cause floods include heavy or steady rain for several hours or days that saturates the ground. Flash floods occur suddenly due to rapidly rising water along a stream or low-lying area.",
-    preperation: "You’ll be better prepared to withstand a flood if you have the following items available – packed and ready to go in case you need to evacuate your home
+    preparation: "You’ll be better prepared to withstand a flood if you have the following items available – packed and ready to go in case you need to evacuate your home
 Water—at least a 3-day supply; one gallon per person per day
 Food—at least a 3-day supply of non-perishable, easy-to-prepare food
 Flashlight [Available on the Red Cross Store]
@@ -77,7 +77,7 @@ Camera for photos of damage",
 
 meteorological.disasters.create!(title: "Heat Wave",
   description: "In recent years, excessive heat has caused more deaths than all other weather events, including floods. A heat wave is a prolonged period of excessive heat, generally 10 degrees or more above average, often combined with excessive humidity.",
-  preperation: "Listen to local weather forecasts and stay aware of upcoming temperature changes.
+  preparation: "Listen to local weather forecasts and stay aware of upcoming temperature changes.
 Be aware of both the temperature and the heat index. The heat index is the temperature the body feels when the effects of heat and humidity are combined.
 Discuss heat safety precautions with members of your household. Have a plan for wherever you spend time— home, work and school—and prepare for power outages.
 Check the contents of your emergency disasters kit in case a power outage occurs.
@@ -89,7 +89,7 @@ Be aware that people living in urban areas may be at greater risk from the effec
 
 meteorological.disasters.create!(title: "Drought",
   description: "A drought is a period of abnormally dry weather that persists long enough to produce a serious hydrologic imbalance, causing, for example, crop damage and shortages in the water supply. The severity of a drought depends on the degree of moisture deficiency, the duration, and the size of the affected area. ",
-  preperation: "General-
+  preparation: "General-
 Never pour water down the drain when there may be another use for it. Use it to water your indoor plants or garden.
 Make sure your home is leak-free. Take a reading of the water meter. Wait 30 minutes without using any water and then take a second reading. If the meter reading changes, you have a leak!
 Repair dripping faucets by replacing washers. One drop per second wastes 2,700 gallons of water per year!",
@@ -98,7 +98,7 @@ Repair dripping faucets by replacing washers. One drop per second wastes 2,700 g
 
 meteorological.disasters.create!(title: "Hurricane",
   description: "Hurricanes are strong storms that can be life-threatening as well as cause serious property-threatening hazards such as flooding, storm surge, high winds and tornadoes. Preparation is the best protection against the dangers of a hurricane. Know the difference between the threat levels and plan accordingly.",
-  preperation: "Check your disasters supplies. Replace or restock as needed.
+  preparation: "Check your disasters supplies. Replace or restock as needed.
 Bring in anything that can be picked up by the wind (bicycles, lawn furniture).
 Close your windows, doors and hurricane shutters. If you do not have hurricane shutters, close and board up all windows and doors with plywood.
 Turn your refrigerator and freezer to the coldest setting. Keep them closed as much as possible so that food will last longer if the power goes out.
@@ -113,7 +113,7 @@ Obey evacuation orders. Avoid flooded roads and washed out bridges.",
 
 geological.disasters.create!(title: "Landslide",
   description: "Landslides have occurred in almost every state and can cause significant damage. The term landslide describes downhill earth movements that can move slowly and cause damage gradually, or move rapidly, destroying property and taking lives suddenly and unexpectedly. ",
-  preperation: "Learn about local emergency response and evacuation plans.
+  preparation: "Learn about local emergency response and evacuation plans.
 Talk to everyone in your household about what to do if a landslide occurs.
 Create and practice an evacuation plan for your family and your business.
 Assemble and maintain an emergency preparedness kit.
@@ -127,7 +127,7 @@ Assemble and maintain an emergency preparedness kit.",
 
 meteorological.disasters.create!(title: "Thunderstorm",
   description: "A thunderstorm is considered severe if it produces hail at least 1 inch in diameter or has wind gusts of at least 58 miles per hour. Every thunderstorm produces lightning, which kills more people each year than tornadoes or hurricanes. Heavy rain from thunderstorms can cause flash flooding, and high winds can damage homes and blow down trees and utility poles, causing widespread power outages.",
-  preperation: "Learn about your local community’s emergency warning system for severe thunderstorms
+  preparation: "Learn about your local community’s emergency warning system for severe thunderstorms
 Discuss thunderstorm safety and lightning safety with all members of your household
 Pick a safe place in your home for household members to gather during a thunderstorm This should be away from windows, skylights and glass doors that could be broken by strong winds or hail
 Make a list of items to bring inside in the event of a severe thunderstorm
@@ -140,7 +140,7 @@ Get trained in first aid and learn how to respond to emergencies",
 
 hydrological.disasters.create!(title: "Tsunami",
   description: "Tsunamis are a series of large ocean waves generated by major earthquakes beneath the ocean floor or major landslides into the ocean. When the waves enter shallow water, they may rise to several feet or, in rare cases, tens of feet, striking the coast with devastating force. ",
-  preperation: "Find out if your home, school, workplace or other frequently visited locations are in tsunami hazard areas.
+  preparation: "Find out if your home, school, workplace or other frequently visited locations are in tsunami hazard areas.
 Know the height of your street above sea level and the distance of your street from the coast or other high-risk waters. Evacuation orders may be based on these numbers.
 Plan evacuation routes from your home, school, workplace and other places you could be where tsunamis present a risk. If possible, pick areas 100 feet (30 meters) above sea level or go as far as 2 miles (3 kilometers) inland, away from the coastline. If you cannot get this high or far, go as high or far as you can. Every foot inland or upward may make a difference. You should be able to reach your safe location on foot within 15 minutes.
 Find out what the school evacuation plan is. Find out if the plan requires you to pick your children up from school or from another location. Telephone lines during a tsunami watch or warning may be overloaded, and routes to and from schools may be jammed.",
@@ -149,7 +149,7 @@ Find out what the school evacuation plan is. Find out if the plan requires you t
 
 meteorological.disasters.create!(title: "Tornado",
   description: "A tornado is a violently rotating column of air that spins while in contact with both the surface of the Earth and a cumulonimbus cloud or, in rare cases, the base of a cumulus cloud. They are often referred to as twisters, whirlwinds or cyclones, although the word cyclone is used in meteorology to name any closed low pressure circulation. ",
-  preperation: "During any storm, listen to local news or a NOAA Weather Radio to stay informed about tornado watches and warnings.
+  preparation: "During any storm, listen to local news or a NOAA Weather Radio to stay informed about tornado watches and warnings.
 Know your community's warning system. Communities have different ways of warning residents about tornados, with many having sirens intended for outdoor warning purposes.
 Pick a safe room in your home where household members and pets may gather during a tornado. This should be a basement, storm cellar or an interior room on the lowest floor with no windows.
 Practice periodic tornado drills so that everyone knows what to do if a tornado is approaching.
@@ -162,7 +162,7 @@ Move or secure lawn furniture, trash cans, hanging plants or anything else that 
 
 wildfire.disasters.create!(title: "Wildfire",
   description: "Droughts and dry conditions throughout various times of the year increase the risk for wildfires. Careless use of fire in highly wooded areas can also dramatically increase the chance of a wildfire, which can then quickly spread across trees and dry brush and threaten homes and businesses that are in vicinity. Wildfires often begin unnoticed. However, they spread quickly and every second counts! Talk with members of your household about wildfires—how to prevent them and what to do if one occurs.",
-  preperation: "Post emergency phone numbers by every phone in your home.
+  preparation: "Post emergency phone numbers by every phone in your home.
 Make sure driveway entrances and your house number or address are clearly marked.
 Identify and maintain an adequate water source outside your home, such as a small pond, cistern, well or swimming pool.
 Set aside household items that can be used as fire tools: a rake, ax, hand saw or chain saw, bucket and shovel. You may need to fight small fires before emergency responders arrive.
@@ -173,7 +173,7 @@ Regularly clean roofs and gutters.",
 
 meteorological.disasters.create!(title: "Winter Storm",
   description: "Winter storms can range from a moderate snow over a few hours to a blizzard with blinding, wind-driven snow that lasts for several days. Some winter storms are large enough to affect several states, while others affect only a single community. Many winter storms are accompanied by dangerously low temperatures and sometimes by strong winds, icing, sleet and freezing rain.",
-  preperation: "Winterize your vehicle and keep the gas tank full. A full tank will keep the fuel line from freezing.
+  preparation: "Winterize your vehicle and keep the gas tank full. A full tank will keep the fuel line from freezing.
 Insulate your home by installing storm windows or covering windows with plastic from the inside to keep cold air out.
 Maintain heating equipment and chimneys by having them cleaned and inspected every year.
 If you will be going away during cold weather, leave the heat on in your home, set to a temperature no lower than 55° F.
@@ -183,7 +183,7 @@ If you will be going away during cold weather, leave the heat on in your home, s
 
 meteorological.disasters.create!(title: "Cyclone",
   description: "An atmospheric system characterized by the rapid inward circulation of air masses about a low-pressure center, usually accompanied by stormy, often destructive weather. Cyclones circulate counterclockwise in the Northern Hemisphere and clockwise in the Southern Hemisphere.",
-  preperation: "Ask your local council if your home is built to cyclone standards.
+  preparation: "Ask your local council if your home is built to cyclone standards.
 Are you adequately insured? Make sure it covers you for storm surge, flooding and cyclone damage, including clean-up and debris removal.
 Check your roof and repair any loose tiles, eaves or roof screws.
 Ensure windows are fitted with shutters or metal screens.

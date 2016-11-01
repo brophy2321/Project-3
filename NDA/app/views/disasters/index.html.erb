@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Disasters</h1>
+
+<table>
+  <thead>
+    <div class="topbox">
+    <ul>
+      <li class="topLink" >Information</li>
+
+      <!-- <li colspan="3"></li> -->
+    </ul>
+  </div>
+  </thead>
+
+  <tbody>
+    <% @disasters.each do |disaster| %>
+      <tr>
+
+        <td class="box"><%= disaster.title %></td>
+        <td class="box"><img src="<%= disaster.photo_url %>"></td>
+        <!-- <td class="box"><%= disaster.description %></td>
+        <td class="box"><%= disaster.preparation %></td> -->
+        <td class="box"><%= link_to 'Show', disaster %></td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Disaster', new_disaster_path %>
