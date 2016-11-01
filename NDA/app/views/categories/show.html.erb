@@ -8,5 +8,13 @@
   <strong>Photo:</strong>
   <img src= "<%= @category.photo_url %>"/>
 </p>
+
+<h2>Disasters in this Category</h2>
+<p>
+  <img src = "<%disaster.photo_url %>"/>
+</p>
+
+   <% @category.disasters.each do |disaster| %>
+
 <% link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
