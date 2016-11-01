@@ -13,3 +13,26 @@
  *= require_tree .
  *= require_self
  */
+body {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+.box {
+  border: 5px solid red;
+  
+}
+
+.topLink {
+  border: 2px solid blue;
+  display: inline-block;
+  margin: 8px;
+}
+.topbox {
+  display: flex;
+}
+
