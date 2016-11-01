@@ -1,0 +1,41 @@
+<h1>Editing Disaster</h1>
+
+<%= form_for :disaster, url: disaster_path(@disaster), method: :patch do |f| %>
+
+  <% if @disaster.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@disaster.errors.count, "error") %> prohibited
+        this disaster from being saved:
+      </h2>
+      <ul>
+        <% @disaster.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :photo_url %><br>
+    <%= f.text_field :photo_url %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description%>
+  </p>
+  <p>
+    <%= f.label :preparation %><br>
+    <%= f.text_field :preparation%>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+  <% end %>
+  <%= link_to 'Back', categories_path %>

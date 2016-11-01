@@ -4,6 +4,7 @@
   <%= @category.title %>
 </p>
 
+<% @category.disasters.each do |disaster| %>
 <p>
   <strong>Photo:</strong>
   <img src= "<%= @category.photo_url %>"/>
@@ -14,7 +15,7 @@
   <img src = "<%disaster.photo_url %>"/>
 </p>
 
-   <% @category.disasters.each do |disaster| %>
 
-<% link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
+<% end %>

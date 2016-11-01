@@ -5,41 +5,14 @@
 
 <p>
   <strong>Photo:</strong>
-  <img src= "<%= @disaster.photo_url %>"/>
+  <%= @disaster.photo_url %>
 </p>
-
 <p>
-  <strong> Description:</strong>
+  <strong>Description:</strong>
   <%= @disaster.description %>
 </p>
 <p>
-  <strong> Preparation:</strong>
-  <%= @disaster.preperation %>
+  <strong>Preparation:</strong>
+  <%= @disaster.preparation %>
 </p>
-
-
-<h2>Add a disaster:</h2>
-<%= form_for([@category, @category.disasters.build]) do |f| %>
-  <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title%>
-  </p>
-  <p>
-    <%= f.label :photo_url %><br>
-    <%= f.text_area :photo_url %>
-  </p>
-<p>
-  <%=f.label :description %><br>
-  <%=f.text_area :body %>
-</p>
-<p>
-  <%=f.label :preparation  %><br>
-  <%=f.text_area :body %>
-</p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
-
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %
+<%= link_to 'Back', disasters_path %>

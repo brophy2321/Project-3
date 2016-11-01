@@ -2,6 +2,10 @@ class DisastersController < ApplicationController
   def index
     @disasters = Disaster.all
   end
+  def show
+    @disaster = Disaster.find(params[:id])
+  end
+  
   def new
     @disaster = Disaster.new
   end
@@ -9,6 +13,7 @@ class DisastersController < ApplicationController
   def create
     @category = Category.find(params[:category_id])
     @disaster = @category.disasters.create(disaster_params)
+    redirect_to category_path (@category)
   end
 
   def destroy
