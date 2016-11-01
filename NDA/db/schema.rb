@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161101012655) do
+ActiveRecord::Schema.define(version: 20161101184202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20161101012655) do
     t.string   "photo_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "disaster_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["disaster_id"], name: "index_comments_on_disaster_id", using: :btree
   end
 
   create_table "disasters", force: :cascade do |t|
@@ -33,5 +42,6 @@ ActiveRecord::Schema.define(version: 20161101012655) do
     t.index ["category_id"], name: "index_disasters_on_category_id", using: :btree
   end
 
+  add_foreign_key "comments", "disasters"
   add_foreign_key "disasters", "categories"
 end

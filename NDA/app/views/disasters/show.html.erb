@@ -5,14 +5,41 @@
 
 <p>
   <strong>Photo:</strong>
-  <%= @disaster.photo_url %>
+  <img src= "<%= @disaster.photo_url %>">
 </p>
 <p>
   <strong>Description:</strong>
   <%= @disaster.description %>
 </p>
 <p>
-  <strong>Preparation:</strong>
-  <%= @disaster.preparation %>
+  <strong>Preperation:</strong>
+  <%= @disaster.preperation %>
 </p>
+<h2>Comments</h2>
+<% @disaster.comments.each do |comment| %>
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+
+  <p>
+    <strong>Comment:</strong>
+    <%= comment.body %>
+  </p>
+<% end %>
+
+<h2>Add a comment:</h2>
+<%= form_for([@disaster, @disaster.comments.build]) do |f| %>
+  <p>
+    <%= f.label :commenter %><br>
+    <%= f.text_field :commenter %>
+  </p>
+  <p>
+    <%= f.label :body %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 <%= link_to 'Back', disasters_path %>
