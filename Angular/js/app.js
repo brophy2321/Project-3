@@ -1,26 +1,34 @@
 angular
-  .module("nda", [
+.module("nda", [
     "ui.router",
     "ngResource"
   ])
   .config([
     "$stateProvider",
     RouterFunction
+  ])
 
-.controller("CategoryIndexController", [
-  "CategoryFactory",
-  CategoryIndexControllerFunction
+.controller("CategoriesIndexController", [
+  "CategoriesFactory",
+  CategoriesIndexControllerFunction
 ])
 
-.controller("DisasterIndexController", [
-  "DisasterFactory",
-  DisasterIndexControllerFunction
+.controller("DisastersIndexController", [
+  "DisastersFactory",
+  DisastersIndexControllerFunction
 ])
-  ]);
+.factory("CategoriesFactory",[
+  "$resource",
+  FactoryFunction
+]);
+function CategoriesIndexControllerFunction($resource){
+  return $resource("http://localhost:3000/categories/index");
+}
+
 
   function RouterFunction($stateProvider){
     $stateProvider
-    .state("categoryIndex", {
+    .state("categoriesIndex", {
       templateUrl: "js/categories/index.html",
       controller: "CategoriesIndexController",
       controllerAs: "vm"
@@ -33,11 +41,8 @@ angular
     })
     .state("disasterShow", {
       url: "/disasters/:id",
-      templateUrl: "js/disasters/show.html"
+      templateUrl: "js/disasters/show.html",
       controller: "DisasterShowController",
       controllerAs: "vm"
     });
   }
-  function FactoryFunction($resource){
-    return $resource("http://localhost:3000/categories/:id");
-  }  ());
