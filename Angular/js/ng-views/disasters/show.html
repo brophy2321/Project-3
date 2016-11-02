@@ -1,7 +1,14 @@
 <h2>{{vm.disaster.title}}</h2>
 
-{{disaster.description}}
+<p>
+<h1>Description</h1>
+  {{vm.disaster.description}}
+</p>
+<p>
+  <h1>Preparation</h1>
+{{vm.disaster.preperation}}
+</p>
+<img src="{{vm.disaster.photo_url}}">
 <div data-ng-repeat="disaster vm.category.disasters">
-<img src="{{disaster.photo_url}}">
 
 </div>
