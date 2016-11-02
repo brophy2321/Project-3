@@ -5,12 +5,17 @@ class DisastersController < ApplicationController
   # GET /disasters.json
   def index
     @disasters = Disaster.all
+    render json: @disasters
   end
 
   # GET /disasters/1
   # GET /disasters/1.json
   def show
     @disaster = Disaster.find(params[:id])
+    respond_to do |format|
+      format.html {render :show}
+      format.json {render json: @disaster, include: :comments}
+    end
   end
 
   # GET /disasters/new
