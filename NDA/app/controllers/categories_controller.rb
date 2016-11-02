@@ -5,17 +5,18 @@ class CategoriesController < ApplicationController
   # GET /categories.json
   def index
     @categories = Category.all
+    render json: @categories
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
-    @categories = Category.find(params[:id])
-    @disaster = Disaster.find(params[:id])
+    @category = Category.find(params[:id])
+    # @disaster = Disaster.find(params[:id])
 
       respond_to do |format|
         format.html {render :show}
-        format.json {render json: @disaster}
+        format.json {render json: @category, include: :disasters}
   end
 end
 
