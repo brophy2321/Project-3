@@ -26,6 +26,7 @@
     DisasterIndexControllerFunction
   ])
   .controller("DisasterShowController", [
+    "$stateParams",
     "DisasterFactory",
     DisasterShowControllerFunction
 
@@ -53,6 +54,7 @@ function DisasterIndexControllerFunction(DisasterFactory){
 }
 
 function DisasterShowControllerFunction($stateParams, DisasterFactory){
+
   this.disaster = DisasterFactory.get({id: $stateParams.id});
 }
 

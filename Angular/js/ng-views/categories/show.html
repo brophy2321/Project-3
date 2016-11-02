@@ -1,6 +1,7 @@
 <h2> List of Natural Disasters in {{vm.category.title}}</h2>
-<div data-ng-repeat="disasters in vm.category">
-  <a data-ui-sref="disasterShow({id: disaster.id})">{{category.disaster.title}}</a><br>
-  <!-- {{vm.category.disasters}}<br> -->
+<div data-ng-repeat="disasters in vm.category.disasters">
+
+  <a data-ui-sref="disasterShow({id: disasters.id})">{{disasters.title}}</a><br>
+<img src="{{disasters.photo_url}}">
 
 </div>
