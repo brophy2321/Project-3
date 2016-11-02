@@ -30,25 +30,30 @@
     DisasterShowControllerFunction
 
   ])
+  .controller("CategoryShowController", [
+    "$stateParams",
+    "CategoryFactory",
+    CategoryShowControllerFunction
+  ])
 
 function CategoryFactoryFunction($resource){
-  return $resource("http://localhost:3000/categories/:id");
-}
-function DisasterFactoryFunction($resource){
-  return $resource("http://localhost:3000/disasters/:id")
+  return $resource("http://localhost:3000/categories/:id.json");
 }
 function CategoryIndexControllerFunction(CategoryFactory) {
-this.category = CategoryFactory.query();
+  this.categories = CategoryFactory.query();
 }
 function CategoryShowControllerFunction($stateParams, CategoryFactory){
   this.category = CategoryFactory.get({id: $stateParams.id});
+}
+function DisasterFactoryFunction($resource){
+  return $resource("http://localhost:3000/disasters/:id.json")
 }
 function DisasterIndexControllerFunction(DisasterFactory){
   this.disaster = DisasterFactory.query();
 }
 
 function DisasterShowControllerFunction($stateParams, DisasterFactory){
-  this.disasters = DisasterFactory.get({id: $stateParams.id});
+  this.disaster = DisasterFactory.get({id: $stateParams.id});
 }
 
   function RouterFunction($stateProvider){

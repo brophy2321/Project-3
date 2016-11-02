@@ -3,7 +3,8 @@
 <div data-ng-repeat="disaster in DisasterIndexViewModel.disasters">
   <p>{{disaster.title}}</p>
 </div>
-iyfvjhvcuyicvjhvcjlgcutlcug
+
 <div data-ng-repeat= "category in vm.categories">
-  <p><a data-ui-sref="categoryShow ({ id: category_id})"> {{category.title}}</a></p>
+  {{category}}
+  <p><a data-ui-sref="categoryShow ({ id: category.id})"> {{category.title}}</a></p>
 </div>
