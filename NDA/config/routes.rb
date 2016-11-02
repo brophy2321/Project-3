@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  get 'homepage/index'
   resources :categories
     resources :disasters do
       resources :comments
     end
 
-  root 'homepage#index'
+  root 'category#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

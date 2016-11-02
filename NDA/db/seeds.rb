@@ -5,6 +5,8 @@
 #
 #   movies = Movie.createcreate! name: 'Star Wars' create!  name: 'Lord of the Rings' ])
 #   Character.create(name: 'Luke', movie: movies.first)
+require('httparty')
+
 Category.destroy_all
 Disaster.destroy_all
 hydrological = Category.create!(title: 'Hydrological Disasters', photo_url: 'http://images.indianexpress.com/2015/08/myanmar-flooding-_kuma.jpg')
