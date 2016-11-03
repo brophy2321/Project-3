@@ -1,0 +1,24 @@
+body {
+  background-color: lightgreen;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+
+
+}
+#headTitle {
+  background-color: orange;
+  font-size: 80px;
+}
+.cover {
+  background-color: lightgrey;
+  text-align: center;
+  margin: 50px;
+}
+.categoryButton {
+  height: 40px;
+  border-radius: 10px;
+  font-size: 20px;
+}
