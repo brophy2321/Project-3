@@ -43,14 +43,23 @@ https://jigsaw.w3.org/css-validator/#validate_by_input
 $ git clone < repo>
 
 Once you have clonned it, you'll have two folder(Angular and NDA(for Rails)).
+
 -Open NDA folder in your terminal and type:
+
 $ git install bundle
+
 $ git rails db:drop
+
 $ git rails db:create
+
 $ git rails db:migrate
+
 $ git rails db:seed  (for some dummy Data)
+
 $ git rails s   (to start the server)
 
 Once you have started the server for rails, open Angular folder in new terminal and type:
+
 $ hs 
-this will start your http server, type one of the http address on to your web browser and thats it, you'll have you web application running.
+
+This will start your http server, type one of the http address on to your web browser and thats it, you'll have you web application running.
