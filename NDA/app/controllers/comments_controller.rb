@@ -1,9 +1,14 @@
 class CommentsController < ApplicationController
-
+def index
+  @disaster = Disaster.find(params[:disaster_id])
+  @comment = @disaster.comments
+  render json: @comments
+end
   def create
     @disaster = Disaster.find(params[:disaster_id])
     @comment = @disaster.comments.create(comment_params)
-    redirect_to disaster_path(@disaster)
+    render json: @comment
+
   end
 
   private

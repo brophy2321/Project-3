@@ -12,10 +12,10 @@ class DisastersController < ApplicationController
   # GET /disasters/1.json
   def show
     @disaster = Disaster.find(params[:id])
-    respond_to do |format|
-      format.html {render :show}
-      format.json {render json: @disaster, include: :comments}
-    end
+    # respond_to do |format|
+    #   format.html {render :show}
+      render json: @disaster, include: :comments
+    # end
   end
 
   # GET /disasters/new
@@ -68,13 +68,13 @@ class DisastersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_disaster
-      @disaster = Disaster.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_disaster
+    @disaster = Disaster.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def disaster_params
-      params.require(:disaster).permit(:title, :photo_url, :description, :preparation)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def disaster_params
+    params.require(:disaster).permit(:title, :photo_url, :description, :preparation)
+  end
 end
