@@ -1,13 +1,21 @@
 # README
 
-# Project3 - Natural Disaster App (NDA)/ (Completed by: Ryan Brophy, Crish Jaffier and Manish Pradhan)
-In this Project we created a website which can help people to get know and prepare themself for Natural Disasters.
-This web app gives out information about the types disaster people can face in thier life and be prepare for it and for those who
-have already faced it, can share thier experience.
+# Project3 - Natural Disaster App (NDA)/ (Completed by: Ryan Brophy, Chris Jaffier and Manish Pradhan)
+In this Project we created a web application that is designed to help educate people on Natural Disaster Prevention techniques. People will also be able to add their own personal experiences in the comments section of the app.
+
 We used rails application for back end and Angularjs for front end to make it functional. 
 
 # User Story :
 
+A User should be able to choose from 4 different disaster categories.
+ 
+A User should be able to choose from 14 different disasters.
+
+A User should be able to pick a specific disaster type.
+
+A User should be able to post comments on a specific disaster with their name and comment description.
+
+All links in the related to the picture and it’s title should work.
 
 
 # Unsolved problems:
@@ -40,7 +48,7 @@ https://jigsaw.w3.org/css-validator/#validate_by_input
 
 # To install this web app:
 
-$ git clone < repo>
+$ git clone <https://github.com/brophy2321/Project-3>
 
 Once you have clonned it, you'll have two folder(Angular and NDA(for Rails)).
 
